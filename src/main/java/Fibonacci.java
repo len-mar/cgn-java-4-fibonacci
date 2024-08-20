@@ -1,10 +1,8 @@
 public class Fibonacci {
     public static long fibonacci(long n) {
-        if (n == 0) {
-            return 0;
-        }
-        if(n == 1 || n == 2){
-            return 1;
+        // base case: if 0 or 1, return n
+        if (n == 0 || n == 1) {
+            return n;
         }
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
